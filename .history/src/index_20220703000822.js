@@ -85,7 +85,7 @@ app.patch('/todos/:id/done', checksExistsUserAccount, (request, response) => {
 
   todo.done = true;
 
-  return response.status(200).json(todo);
+  return response.status(204).json(todo);
 });
 
 app.delete('/todos/:id', checksExistsUserAccount, (request, response) => {

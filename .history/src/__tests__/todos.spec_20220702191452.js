@@ -86,7 +86,7 @@ describe('Todos', () => {
         deadline: todoDate
       })
       .set('username', userResponse.body.username);
-     
+
     expect(response.body).toMatchObject({
       title: 'update title',
       deadline: todoDate.toISOString(),
